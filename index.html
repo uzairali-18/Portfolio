@@ -684,10 +684,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm" action="https://formsubmit.co/uzairali10005@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" required>
@@ -772,8 +769,31 @@
             observer.observe(item);
         });
 
-        // Form Submission - No longer needed as FormSubmit handles it
-        // The form will automatically redirect after submission
+        // Form Submission with mailto
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Create email content
+            const subject = encodeURIComponent('New Portfolio Contact from ' + name);
+            const body = encodeURIComponent(
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Message:\n' + message
+            );
+            
+            // Open default email client
+            window.location.href = 'mailto:uzairali10005@gmail.com?subject=' + subject + '&body=' + body;
+            
+            // Show success message
+            alert('Your email client will open. Please send the email to complete your message.');
+            
+            // Reset form
+            e.target.reset();
+        });
 
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
