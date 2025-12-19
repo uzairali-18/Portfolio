@@ -769,7 +769,7 @@
             observer.observe(item);
         });
 
-        // Form Submission with mailto
+        // Form Submission - Opens Gmail compose directly
         document.getElementById('contactForm').addEventListener('submit', (e) => {
             e.preventDefault();
             
@@ -777,22 +777,32 @@
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
             
-            // Create email content
-            const subject = encodeURIComponent('New Portfolio Contact from ' + name);
-            const body = encodeURIComponent(
+            // Create Gmail compose URL
+            const gmailSubject = encodeURIComponent('New Portfolio Contact from ' + name);
+            const gmailBody = encodeURIComponent(
                 'Name: ' + name + '\n' +
-                'Email: ' + email + '\n' +
-                'Message:\n' + message
+                'Email: ' + email + '\n\n' +
+                'Message:\n' + message + '\n\n' +
+                '---\n' +
+                'Sent from Uzair Ali Portfolio'
             );
             
-            // Open default email client
-            window.location.href = 'mailto:uzairali10005@gmail.com?subject=' + subject + '&body=' + body;
+            // Open Gmail compose in new tab
+            const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=uzairali10005@gmail.com&su=${gmailSubject}&body=${gmailBody}`;
+            
+            window.open(gmailURL, '_blank');
             
             // Show success message
-            alert('Your email client will open. Please send the email to complete your message.');
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = '✅ Gmail Opened! Please send the email';
+            btn.style.background = 'linear-gradient(135deg, #22d3ee, #6366f1)';
             
-            // Reset form
-            e.target.reset();
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
+                e.target.reset();
+            }, 3000);
         });
 
         // Smooth scroll for navigation links
