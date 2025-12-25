@@ -283,6 +283,11 @@
             }
         }
 
+        .how-i-help div[style*="border-left"]:hover {
+            box-shadow: 0 0 50px rgba(99, 102, 241, 0.6), 0 0 80px rgba(139, 92, 246, 0.4);
+            transform: translateY(-5px);
+        }
+
         .testimonial-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(99, 102, 241, 0.3);
@@ -585,22 +590,22 @@
             <div style="max-width: 900px; margin: 0 auto; color: #cbd5e1; line-height: 1.8; font-size: 1.1rem;">
                 <p style="margin-bottom: 2rem;">I focus on practical SEO work that improves search visibility without gimmicks. My approach is simple: understand what people search for, structure content properly, and make sure Google can read and rank the site.</p>
                 
-                <div style="background: rgba(30, 41, 59, 0.6); padding: 2rem; border-radius: 15px; margin-bottom: 2rem; border-left: 4px solid var(--accent);">
+                <div style="background: rgba(30, 41, 59, 0.6); padding: 2rem; border-radius: 15px; margin-bottom: 2rem; border-left: 4px solid var(--accent); box-shadow: 0 0 30px rgba(99, 102, 241, 0.3); transition: all 0.3s;">
                     <h3 style="color: var(--accent); margin-bottom: 1rem; font-size: 1.4rem;">1. Keyword Research</h3>
                     <p>I find keywords people actually search for. Not vanity terms. I look at search intent, competition level, and what makes sense for the site's content. Tools I use: Google Keyword Planner, Ubersuggest, and manual SERP analysis.</p>
                 </div>
 
-                <div style="background: rgba(30, 41, 59, 0.6); padding: 2rem; border-radius: 15px; margin-bottom: 2rem; border-left: 4px solid var(--primary);">
+                <div style="background: rgba(30, 41, 59, 0.6); padding: 2rem; border-radius: 15px; margin-bottom: 2rem; border-left: 4px solid var(--primary); box-shadow: 0 0 30px rgba(99, 102, 241, 0.3); transition: all 0.3s;">
                     <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">2. On-Page SEO</h3>
                     <p>I optimize the parts of the page Google reads: title tags, meta descriptions, heading structure (H1, H2, H3), and internal linking. I make sure the content answers the search query clearly and that the structure makes sense for both users and crawlers.</p>
                 </div>
 
-                <div style="background: rgba(30, 41, 59, 0.6); padding: 2rem; border-radius: 15px; margin-bottom: 2rem; border-left: 4px solid var(--secondary);">
+                <div style="background: rgba(30, 41, 59, 0.6); padding: 2rem; border-radius: 15px; margin-bottom: 2rem; border-left: 4px solid var(--secondary); box-shadow: 0 0 30px rgba(99, 102, 241, 0.3); transition: all 0.3s;">
                     <h3 style="color: var(--secondary); margin-bottom: 1rem; font-size: 1.4rem;">3. Content Optimization</h3>
                     <p>I write and optimize content based on keyword research and search intent. The goal is to match what users are looking for, not just stuff keywords. I keep it natural, structured, and useful.</p>
                 </div>
 
-                <div style="background: rgba(30, 41, 59, 0.6); padding: 2rem; border-radius: 15px; border-left: 4px solid var(--accent);">
+                <div style="background: rgba(30, 41, 59, 0.6); padding: 2rem; border-radius: 15px; border-left: 4px solid var(--accent); box-shadow: 0 0 30px rgba(99, 102, 241, 0.3); transition: all 0.3s;">
                     <h3 style="color: var(--accent); margin-bottom: 1rem; font-size: 1.4rem;">4. Basic Technical SEO</h3>
                     <p>I handle the technical basics: mobile responsiveness, page speed optimization, clean HTML structure, proper use of semantic tags, and making sure the site is crawlable. I also set up Google Search Console and submit sitemaps.</p>
                 </div>
@@ -614,7 +619,7 @@
             <h2 class="section-title">Skills</h2>
             
             <h3 style="color: var(--accent); text-align: center; margin-bottom: 2rem; font-size: 1.5rem;">Primary SEO Skills</h3>
-            <div class="skills-grid" style="margin-bottom: 4rem;">
+            <div class="skills-grid" style="margin-bottom: 4rem; justify-items: center;">
                 <div class="skill-card">
                     <div class="skill-icon">🔍</div>
                     <h3>Keyword Research</h3>
@@ -630,7 +635,7 @@
                     <h3>Content Optimization</h3>
                     <p>Creating and optimizing SEO-focused content that matches user search intent.</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" style="grid-column: 2 / 3;">
                     <div class="skill-icon">📍</div>
                     <h3>Local SEO (Basic)</h3>
                     <p>Setting up local business optimization for better local search visibility.</p>
@@ -638,7 +643,7 @@
             </div>
 
             <h3 style="color: var(--accent); text-align: center; margin-bottom: 2rem; font-size: 1.5rem;">Supporting Skills</h3>
-            <div class="skills-grid">
+            <div class="skills-grid" style="justify-items: center;">
                 <div class="skill-card">
                     <div class="skill-icon">🌐</div>
                     <h3>SEO-friendly Website Structure</h3>
@@ -654,7 +659,7 @@
                     <h3>Basic HTML, CSS, JavaScript</h3>
                     <p>Building and deploying responsive websites with SEO-ready structure.</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" style="grid-column: 2 / 3;">
                     <div class="skill-icon">🚀</div>
                     <h3>Website Deployment (GitHub Pages)</h3>
                     <p>Deploying and managing basic websites with proper hosting setup.</p>
@@ -793,18 +798,6 @@
                 </div>
 
                 <div class="testimonial-card" style="background: rgba(30, 41, 59, 0.8); padding: 2rem; border-radius: 15px; border: 1px solid rgba(99, 102, 241, 0.2); transition: all 0.3s; position: relative;">
-                    <div style="color: var(--accent); font-size: 2rem; margin-bottom: 1rem;">⭐⭐⭐⭐<span style="opacity: 0.5;">⭐</span></div>
-                    <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem; font-style: italic;">"Solid SEO work. Uzair handled my website's meta tags, heading structure, and internal linking. He's straightforward, doesn't oversell, and gets the job done properly."</p>
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--accent)); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">HS</div>
-                        <div>
-                            <h4 style="color: var(--accent); margin-bottom: 0.2rem;">Hassan Sheikh</h4>
-                            <p style="color: #94a3b8; font-size: 0.9rem;">Web Developer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card" style="background: rgba(30, 41, 59, 0.8); padding: 2rem; border-radius: 15px; border: 1px solid rgba(99, 102, 241, 0.2); transition: all 0.3s; position: relative;">
                     <div style="color: var(--accent); font-size: 2rem; margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
                     <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem; font-style: italic;">"Uzair helped with keyword research and content optimization for my coaching website. He identified the right search terms and improved my content structure. Happy with the results and his communication throughout."</p>
                     <div style="display: flex; align-items: center; gap: 1rem;">
@@ -816,6 +809,20 @@
                     </div>
                 </div>
 
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-top: 2rem;">
+                <div class="testimonial-card" style="background: rgba(30, 41, 59, 0.8); padding: 2rem; border-radius: 15px; border: 1px solid rgba(99, 102, 241, 0.2); transition: all 0.3s; position: relative; max-width: 600px;">
+                    <div style="color: var(--accent); font-size: 2rem; margin-bottom: 1rem;">⭐⭐⭐⭐<span style="opacity: 0.5;">⭐</span></div>
+                    <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1.5rem; font-style: italic;">"Solid SEO work. Uzair handled my website's meta tags, heading structure, and internal linking. He's straightforward, doesn't oversell, and gets the job done properly."</p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--accent)); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">HS</div>
+                        <div>
+                            <h4 style="color: var(--accent); margin-bottom: 0.2rem;">Hassan Sheikh</h4>
+                            <p style="color: #94a3b8; font-size: 0.9rem;">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
