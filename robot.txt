@@ -1,14 +1,14 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://uzairali-18.github.io/UzairAli-Portfolio/sitemap.xml
+Sitemap: https://uzairali-18.github.io/Portfolio/sitemap.xml
 ```
 
 ---
 
 ## ✅ **Steps to Upload:**
 
-1. Go to: https://github.com/uzairali-18/UzairAli-Portfolio
+1. Go to: https://github.com/uzairali-18/Portfolio
 2. Click **"Add file"** → **"Create new file"**
 3. Name it: `sitemap.xml`
 4. Paste the sitemap content above
@@ -29,6 +29,6 @@ Sitemap: https://uzairali-18.github.io/UzairAli-Portfolio/sitemap.xml
 
 ## 🧪 **Test Your Sitemap:**
 
-After uploading, visit:
+After uploading (wait 5-10 minutes), visit:
 ```
-https://uzairali-18.github.io/UzairAli-Portfolio/sitemap.xml
+https://uzairali-18.github.io/Portfolio/sitemap.xml
