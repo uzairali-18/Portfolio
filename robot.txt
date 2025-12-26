@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uzairali-18.github.io/UzairAli-Portfolio/sitemap.xml
+```
+
+---
+
+## ✅ **Steps to Upload:**
+
+1. Go to: https://github.com/uzairali-18/UzairAli-Portfolio
+2. Click **"Add file"** → **"Create new file"**
+3. Name it: `sitemap.xml`
+4. Paste the sitemap content above
+5. Click **"Commit changes"**
+6. Repeat for `robots.txt`
+
+---
+
+## 🔍 **Submit to Google Search Console:**
+
+1. Go to: [Google Search Console](https://search.google.com/search-console)
+2. Select your property
+3. Click **"Sitemaps"** (left sidebar)
+4. Enter: `sitemap.xml`
+5. Click **"Submit"**
+
+---
+
+## 🧪 **Test Your Sitemap:**
+
+After uploading, visit:
+```
+https://uzairali-18.github.io/UzairAli-Portfolio/sitemap.xml
